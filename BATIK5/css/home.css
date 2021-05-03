@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+
+.carousel-img {
+    height: 600px;
+}
+
+.container {
+    background-color: #fff1e6;
+}
+
+/* info panel */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .5);
+    border-radius: 12px;
+    margin-top: -60px;
+    background-color: #faf5f2;
+    padding: 30px;
+    color: #9c6644;
+}
+
+/* tengah */
+.tengah {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tengah h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #9c6644;
+}
+
+.tengah h3 span {
+    font-weight: 700;
+}
+
+.tengah img {
+    border-radius: 12px;
+}
+
+/* filosofi */
+.filosofi {
+    margin-top: 50px;
+}
+
+.filosofi h5 {
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 100px;
+    margin-bottom: 50px;
+    color: #9c6644;
+}
+
+.filosofi p {
+    text-align: justify;
+}
+
+.bfilosofi {
+    padding: 30px 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .5);
+}
+
+.filosofi .bfilosofi h4 {
+    color: #9c6644;
+    font-family: 'Lato', sans-serif;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+    .gambar {
+        text-align: left;
+    }
+
+    .filosofi h5 {
+        font-size: 32px;
+    }
+
+    .bfilosofi {
+        background: linear-gradient(to bottom, #ffd4b9, #fcf0e9, #ffd4b9);
+
+    }
+
+    .tengah-img {
+        filter: grayscale(100%);
+        transition: filter 0.5s;
+    }
+
+    .tengah-img:hover {
+        filter: grayscale(0);
+    }
+}
+
+/* mobile version */
+@media (max-width: 768px) {
+
+    .carousel-img {
+        height: 200px;
+    }
+
+    .filosofi h5 {
+        font-size: 27px;
+    }
+
+    .bfilosofi {
+        box-shadow: none;
+    }
+
+    .info-panel {
+        margin-top: 10px;
+        margin-bottom: 200px;
+    }
+
+    .info-panel h1 {
+        font-size: 25px;
+    }
+
+    .tengah .btengah {
+        margin-top: -250px;
+    }
+
+    .tengah .btengah h3 {
+        font-size: 30px;
+    }
+
+    .tengah-img {
+        margin-top: -100px;
+        height: 200px;
+    }
+
+}

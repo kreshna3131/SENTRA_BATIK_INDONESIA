@@ -1,0 +1,74 @@
+/* Navigsi Bar */
+.navbar {
+    position: relative;
+    z-index: 1;
+    background-color: #9c6644;
+    color: #eddcd2;
+}
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+    body {
+        background-color: #fff1e6;
+    }
+
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #fff1e6;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: .5s ease all;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: .5s ease all;
+    }
+}
+
+/* mobile version */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+    }
+
+    .navbar-toggler {
+        background-color: #fff1e6;
+    }
+}

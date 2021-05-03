@@ -1,0 +1,23 @@
+.aboutpage {
+    padding-top: 20px;
+    padding: 20px 40px 40px;
+}
+
+.aboutpage h2 {
+    text-align: center;
+}
+
+.aboutpage img {
+    border-radius: 12px;
+}
+
+.aboutpage p {
+    text-align: justify;
+}
+
+/* mobile version */
+@media (max-width: 768px) {
+    .aboutpage img {
+        height: 150px;
+    }
+}
